@@ -10,6 +10,30 @@ string[] array = str.Split(new Char[] {' '});
 
 
 
+string[] FormingArray(string[] array)
+{
+    int countLarge = 0;
+    for(var i = 0; i < array.Length; i++)    
+    {       
+        if(array[i].Length < 3) 
+        {
+            countLarge++;
+        }
+    }
+    
+    string[] filteredArray = new string[countLarge];
+    countLarge = 0;
+
+    for(var i = 0; i < array.Length; i++)    
+    {       
+        if(array[i].Length < 3) 
+        {
+            filteredArray[countLarge] = array[i];
+            countLarge++;
+        }
+    } 
+    return filteredArray;  
+}
 
 
 void PrintArray(string[] array)
