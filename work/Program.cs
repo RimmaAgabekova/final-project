@@ -18,7 +18,7 @@ string[] FormingArray(string[] array)
     int countLarge = 0;
     for(var i = 0; i < array.Length; i++)    
     {       
-        if(array[i].Length < 3) 
+        if(array[i].Length <= 3) 
         {
             countLarge++;
         }
@@ -29,7 +29,7 @@ string[] FormingArray(string[] array)
 
     for(var i = 0; i < array.Length; i++)    
     {       
-        if(array[i].Length < 3) 
+        if(array[i].Length <= 3) 
         {
             filteredArray[countLarge] = array[i];
             countLarge++;
