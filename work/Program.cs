@@ -8,7 +8,10 @@ Console.WriteLine("Введите через пробел:");
 string str = Console.ReadLine();
 string[] array = str.Split(new Char[] {' '});
 
-
+PrintArray(array);
+Console.WriteLine();
+PrintArray(FormingArray(array));
+Console.WriteLine();
 
 string[] FormingArray(string[] array)
 {
@@ -34,7 +37,6 @@ string[] FormingArray(string[] array)
     } 
     return filteredArray;  
 }
-
 
 void PrintArray(string[] array)
 {
